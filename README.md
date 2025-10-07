@@ -11,8 +11,10 @@ User signup and login via Firebase Authentication.
 
 User profiles stored in PostgreSQL, linked by Firebase UID.
 
+
 **ii)Chat Management
 **
+
 Create chats with unique IDs, names, and optional scheduling.
 
 Define chat status (active, scheduled, etc.) at creation.
@@ -25,9 +27,11 @@ Real-time Messaging
 
 Send and receive messages in real time using Google Firestore.
 
+
 **iii)LLM-Powered Summarization
 **
 Generate concise summaries of recent chat messages using Google Gemini via LangChain/LangGraph.
+
 
 **Tech Stack**
 Component	Technology
