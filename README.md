@@ -2,7 +2,8 @@
 
 This repository contains the backend API for the Chat Summarizer Application. It provides user authentication, chat management, real-time messaging, and intelligent chat summarization using Large Language Models (LLMs).
 
-** Features**
+**Features
+**
 
 **i)User Authentication & Profiles**
 
