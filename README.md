@@ -45,8 +45,8 @@ Real-time DB	Google Firestore
 LLM Integration	Google Gemini API (LangChain / LangGraph)
 Environment Management	python-dotenv
 Setup Guide
-Prerequisites
-
+**Prerequisites
+**
 Python 3.10+
 
 pip
@@ -63,14 +63,17 @@ Google Gemini API key
 git clone https://github.com/your-username/chat-summarizer-app.git
 cd chat-summarizer-app
 
+
 3️⃣ Set Up Virtual Environment
 cd backend
 python -m venv .venv
 .\.venv\Scripts\activate   # Windows
 # source .venv/bin/activate  # macOS/Linux
 
+
 4️⃣ Install Dependencies
 pip install -r requirements.txt
+
 
 5️⃣ Configure Environment Variables
 
@@ -79,18 +82,22 @@ Create a .env file in backend/:
 SQL_DATABASE_URL="postgresql+psycopg2://postgres:YOUR_PASSWORD@localhost:5432/chat_summarizer_db"
 GEMINI_API_KEY="YOUR_GEMINI_API_KEY"
 
+
 6️⃣ Initialize the Database
 psql -U postgres
 CREATE DATABASE chat_summarizer_db;
 \q
+
 
 # Create SQL tables
 cd ..
 python -m backend.src.db.sql_client
 
 
+
 ✅ You should see:
 All SQL tables created successfully!
+
 
 7️⃣ Run the Backend Server
 uvicorn backend.src.app.main:app --reload
