@@ -5,9 +5,9 @@ from sqlalchemy.orm import Session
 from typing import List, Optional
 
 # Import dependencies
-import src.db.sql_client as sql_client_db
-from src.app.models.user_models import User as DBUser # Our SQL User model
-from src.app.auth.auth_routes import get_current_user_uid # For authentication
+import backend.src.db.sql_client as sql_client_db
+from backend.src.app.models.user_models import User as DBUser # Our SQL User model
+from backend.src.app.auth.auth_routes import get_current_user_uid # For authentication
 
 router = APIRouter(
     prefix="/users", # Base prefix for user-related endpoints

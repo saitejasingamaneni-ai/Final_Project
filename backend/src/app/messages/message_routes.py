@@ -6,13 +6,13 @@ from datetime import datetime, timezone
 from typing import List
 
 # Import dependencies
-import src.db.firebase_admin_client # Ensures Firebase Admin SDK is initialized
-from src.db.firestore_client import get_firestore_db # NEW: Firestore client dependency
-import src.db.sql_client as sql_client_db # For SQL DB access (to check chat participants, chat status)
-from src.app.auth.auth_routes import get_current_user_uid # For user authentication
-from src.app.models.message_models import MessageCreate, MessageResponse # NEW: Message models
-from src.app.models.chat_models import Chat, ChatParticipant # For checking chat status and participation
-from src.app.models.user_models import User as DBUser # For getting sender's username
+import backend.src.db.firebase_admin_client # Ensures Firebase Admin SDK is initialized
+from backend.src.db.firestore_client import get_firestore_db # NEW: Firestore client dependency
+import backend.src.db.sql_client as sql_client_db # For SQL DB access (to check chat participants, chat status)
+from backend.src.app.auth.auth_routes import get_current_user_uid # For user authentication
+from backend.src.app.models.message_models import MessageCreate, MessageResponse # NEW: Message models
+from backend.src.app.models.chat_models import Chat, ChatParticipant # For checking chat status and participation
+from backend.src.app.models.user_models import User as DBUser # For getting sender's username
 
 router = APIRouter(
     prefix="/chats/{chat_id}/messages", # Prefix includes chat_id

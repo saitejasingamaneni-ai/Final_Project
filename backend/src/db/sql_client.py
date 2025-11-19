@@ -3,7 +3,7 @@
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
-from src.db.base import Base
+from backend.src.db.base import Base
 
 from backend.config.settings import SQL_DATABASE_URL
 # SQLAlchemy setup
@@ -14,8 +14,8 @@ print(f"DEBUG SQL_CLIENT Base ID: {id(Base)}")
 
 
 # Dependency to get a database session
-import src.app.models.user_models
-import src.app.models.chat_models
+import backend.src.app.models.user_models
+import backend.src.app.models.chat_models
 # ------------------------------------------------------------------
 
 

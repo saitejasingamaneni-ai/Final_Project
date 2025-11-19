@@ -7,9 +7,9 @@ from datetime import datetime, timezone
 from firebase_admin import firestore
 
 # Local imports for LangGraph agent and state
-from src.llm_summarizer.langgraph_agent import summary_graph_app, AgentState
-from src.app.models.chat_models import Chat
-from src.app.models.message_models import MessageResponse # For type hinting/formatting
+from backend.src.llm_summarizer.langgraph_agent import summary_graph_app, AgentState
+from backend.src.app.models.chat_models import Chat
+from backend.src.app.models.message_models import MessageResponse # For type hinting/formatting
 
 # Define the buffer size for messages to send to the LLM
 MESSAGE_BUFFER_SIZE = 1000 # As agreed, 10 for initial testing

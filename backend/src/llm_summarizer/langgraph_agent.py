@@ -8,7 +8,7 @@ from langgraph.graph import StateGraph, END
 import os
 
 # Local imports
-from src.llm_summarizer.prompt_templates import SUMMARIZATION_PROMPT, format_chat_description, format_messages_transcript
+from backend.src.llm_summarizer.prompt_templates import SUMMARIZATION_PROMPT, format_chat_description, format_messages_transcript
 
 # --- 1. Define Graph State ---
 # This state will be passed between nodes in our graph.

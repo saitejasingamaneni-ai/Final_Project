@@ -5,7 +5,7 @@ import os
 import json # NEW: Import json for parsing JSON string
 
 # Import settings to get the local fallback path
-import config.settings as settings # CHANGED: Use src.config.settings
+import backend.config.settings as settings # CHANGED: Use src.config.settings
 
 try:
     if not firebase_admin._apps:

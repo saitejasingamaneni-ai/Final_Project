@@ -3,7 +3,7 @@ from sqlalchemy import Column, String, DateTime, ForeignKey
 from sqlalchemy.sql import func
 from sqlalchemy.orm import relationship
 
-from src.db.base import Base # This import stays
+from backend.src.db.base import Base # This import stays
 print(f"DEBUG CHAT_MODELS Base ID: {id(Base)}")
 # REMOVED: from src.app.models.user_models import User
 

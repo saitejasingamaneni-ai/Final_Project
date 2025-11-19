@@ -5,7 +5,7 @@ import os
 
 # Ensure Firebase Admin SDK is initialized before trying to get Firestore client
 # This import will trigger the initialization code in firebase_admin_client.py
-import src.db.firebase_admin_client 
+import backend.src.db.firebase_admin_client 
 
 # Get a Firestore client instance
 # This assumes firebase_admin.initialize_app() has already been called

@@ -11,12 +11,12 @@ if project_root not in sys.path:
     sys.path.insert(0, project_root)
 
 # Import and ensure Firebase Admin SDK is initialized
-import src.db.firebase_admin_client # This import ensures initialization
-from src.app.auth.auth_routes import router as auth_router # Import our auth router
-from src.app.chats.chat_routes import router as chat_router # New: Import chat router
-from src.app.messages.message_routes import router as message_router # New: Import message router
-from src.app.summary_routes import router as summary_router # New: Import summary router
-from src.app.user_routes import router as user_router
+import backend.src.db.firebase_admin_client # This import ensures initialization
+from backend.src.app.auth.auth_routes import router as auth_router # Import our auth router
+from backend.src.app.chats.chat_routes import router as chat_router # New: Import chat router
+from backend.src.app.messages.message_routes import router as message_router # New: Import message router
+from backend.src.app.summary_routes import router as summary_router # New: Import summary router
+from backend.src.app.user_routes import router as user_router
 
 app = FastAPI(
     title="Chat Summarizer Backend",

@@ -8,10 +8,10 @@ import uuid
 from datetime import datetime, timezone
 
 # New: Import get_db and models
-from src.db.sql_client import get_db
-from src.app.models.chat_models import Chat, ChatParticipant
-from src.app.models.user_models import User as DBUser # To find users by email/username
-from src.app.auth.auth_routes import get_current_user_uid # For protected routes
+from backend.src.db.sql_client import get_db
+from backend.src.app.models.chat_models import Chat, ChatParticipant
+from backend.src.app.models.user_models import User as DBUser # To find users by email/username
+from backend.src.app.auth.auth_routes import get_current_user_uid # For protected routes
 
 router = APIRouter(
     prefix="/chats",

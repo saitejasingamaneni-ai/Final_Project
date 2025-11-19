@@ -7,13 +7,13 @@ from datetime import datetime, timezone
 from firebase_admin import auth
 import jwt
 # Import firebase_admin_client to ensure Firebase Admin SDK is initialized
-import src.db.firebase_admin_client 
+import backend.src.db.firebase_admin_client 
 
 # Import sql_client_db for access to get_db dependency
-import src.db.sql_client as sql_client_db
+import backend.src.db.sql_client as sql_client_db
 
 # Import our User model for SQL operations
-from src.app.models.user_models import User as DBUser
+from backend.src.app.models.user_models import User as DBUser
 
 router = APIRouter(
     prefix="/auth",
